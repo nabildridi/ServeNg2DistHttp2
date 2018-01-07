@@ -16,7 +16,7 @@ The project needs **JDK9** to run, it can't be run with any other version of Jav
  4. **Deactivating http protocol** :
 	By default, the server is serving via http and https, if you want to deactivate http protocol start the server with `-nohttp` argument, example : `java -jar Server.jar -nohttp`     
 
- 5. **SSl certificate used in this project** :  
+ 5. **SSL certificate used in this project** :  
 	This project was never meant to have a production quality level, it has a self-signed ssl certificate, if you want to put your own certificate then you will need : 
 	* To put your own cerificate by replacing the file `/src/main/resources/keystore`    
 	* And to change the passwords in the `com.nd.services.ServerService` class
