@@ -13,15 +13,15 @@ The project needs **JDK9** to run, it can't be run with any other version of Jav
 	* open https://localhost:8443/upload.html in the browser and upload the `dist` folder of your angular 2+ application
  	* The Ng2 application is accessible via the url https://localhost:8443
 
- 4. **Deactivating http protocol**
- By default, the server is serving via http and https, if you want to deactivate http protocol start the server with `-nohttp` argument, example : `java -jar Server.jar -nohttp`     
+ 4. **Deactivating http protocol** :
+	By default, the server is serving via http and https, if you want to deactivate http protocol start the server with `-nohttp` argument, example : `java -jar Server.jar -nohttp`     
 
- 5. **SSl certificate used in this project**   
- This project was never meant to have a production quality level, it has a self-signed ssl certificate, if you want to put your own certificate then you will need : 
+ 5. **SSl certificate used in this project** :  
+	This project was never meant to have a production quality level, it has a self-signed ssl certificate, if you want to put your own certificate then you will need : 
 	* To put your own cerificate by replacing the file `/src/main/resources/keystore`    
 	* And to change the passwords in the `com.nd.services.ServerService` class
  
  
 
- 6. **Why the build output of the project is a folder and not as one jar with dependencies** 
- Building this project as one jar made the http2 requests failing when executed, the only way that made it work is to build it as a folder, it is a problem related to this : https://github.com/eclipse/jetty.project/issues/1548 
+ 6. **Why the build output of the project is a folder and not as one jar with dependencies** :
+	Building this project as one jar made the http2 requests failing when executed, the only way that made it work is to build it as a folder, it is a problem related to this : https://github.com/eclipse/jetty.project/issues/1548 
