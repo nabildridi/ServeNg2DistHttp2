@@ -11,7 +11,7 @@ The project needs **JDK9** to run, it can't be run with any other version of Jav
 	* Execute `mvn clean install`, the generated jars will be under the directory `NgHttp2Server` in `target`, copy that directory where you want and execute `java -jar Server.jar` to start the server, it will start on 8080 port for http and on 8443 for https, you can change those ports by specifying them as argument, example  : `java -jar Server.jar -http 8888 -https 8444`
  	* Or launch 'com.nd.MainClass' from eclipse
 	* open https://localhost:8443/upload.html in the browser and upload the `dist` folder of your angular 2+ application
- 	* The Ng2 application is accessible via the url https://localhost:8443
+ 	* The Ng2 application will be accessible via the url https://localhost:8443
 	* The same upload page and application url are accessible via http : http://localhost:8080/upload.html and http://localhost:8080
 
  4. **Restarting the server** :
