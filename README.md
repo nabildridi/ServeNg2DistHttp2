@@ -12,6 +12,7 @@ The project needs **JDK9** to run, it can't be run with any other version of Jav
  	* Or launch 'com.nd.MainClass' from eclipse
 	* open https://localhost:8443/upload.html in the browser and upload the `dist` folder of your angular 2+ application
  	* The Ng2 application is accessible via the url https://localhost:8443
+	* The same upload page and application url are accessible via http : http://localhost:8080/upload.html and http://localhost:8080
 
  4. **Deactivating http protocol** :
 	By default, the server is serving via http and https, if you want to deactivate http protocol start the server with `-nohttp` argument, example : `java -jar Server.jar -nohttp`     
