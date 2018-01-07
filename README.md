@@ -9,17 +9,17 @@ Serve Angular 2+ dist files in HTTP/2 with an embedded Jetty server and Java 9
 
  3. **Getting started**
 	* Execute `mvn clean install`, the generated jars will be under the directory `NgHttp2Server` in `target`, copy that directory where you want and execute `java -jar Server.jar` to start the server, it will start on 8080 port for http and on 8443 for https, you can change those ports by specifying them as argument, example  : `java -jar Server.jar -http 8888 -https 8444`
- 4. Or launch 'com.nd.MainClass' from eclipse
- 5. open https://localhost:8443/upload.html in the browser and upload the `dist` folder of your angular 2+ application
- 6. The Ng2 application is accessible via the url https://localhost:8443
+ * Or launch 'com.nd.MainClass' from eclipse
+ * open https://localhost:8443/upload.html in the browser and upload the `dist` folder of your angular 2+ application
+ * The Ng2 application is accessible via the url https://localhost:8443
 
  7. **Deactivating http protocol**
  By default, the server is serving via http and https, if you want to deactivate http protocol start the server with `-nohttp` argument, example : `java -jar Server.jar -nohttp`     
 
  8. **SSl certificate used in this project**   
  This project was never meant to have a production quality level, it has a self-signed ssl certificate, if you want to put your own certificate then you will need : 
- 9. To put your own cerificate by replacing the file `/src/main/resources/keystore`    
- 10. And to change the passwords in the `com.nd.services.ServerService` class
+  * To put your own cerificate by replacing the file `/src/main/resources/keystore`    
+  * And to change the passwords in the `com.nd.services.ServerService` class
  
  
 
